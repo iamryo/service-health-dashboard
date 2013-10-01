@@ -5,7 +5,6 @@ gem 'rails', '3.2.12'
  # gem 'sqlite3'
 gem 'resque', '~>1.24.1', :require => ["resque/server"]
 gem 'resque-scheduler'
-gem 'mysql2'
 gem 'devise'
 gem 'friendly_id', '~> 4.0.9'
 gem 'fastercsv' # Only required on Ruby 1.8 and below
@@ -22,9 +21,10 @@ end
 
 
 group :test, :development do
-	gem 'rspec-rails'
-	gem 'capybara'
-	gem 'ruby_gntp'
+  gem 'mysql2'
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'ruby_gntp'
 end
 
 group :production do

@@ -27,3 +27,6 @@ group :test, :development do
 	gem 'ruby_gntp'
 end
 
+group :production do
+  gem 'pg'
+end
